@@ -1,0 +1,23 @@
+c programming basics:
+
+---------------------------------
+Data types
+
+1:Built in primitives 
+  *Integer---> *Int , *Char
+  *Boolean 
+  *Floating point---> *Float , *Double 
+
+2:Derived 
+  *Array
+  *Pointers
+
+3:User defined 
+  *Structure
+  *Enumunation
+  *Union
+---------------------------------
+Aritthmetic operators 
+   * , / , % , + , - 
+
+
