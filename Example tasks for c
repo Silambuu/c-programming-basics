@@ -1,5 +1,29 @@
-Ramesh's basic salary is input through the keyboard. His dearness allowance is 40% of basic salary, and house rent allowance is 20% of basic salary, write a program to calculate his gross salary.
+1.Ramesh's basic salary is input through the keyboard. His dearness allowance is 40% of basic salary, and house rent allowance is 20% of basic salary, write a program to calculate his gross salary.
 
-program:
-         
+PROGRAM:
+        #include <stdio.h>
+int main()
+{
+    float bs,da,hra,gs;
+    printf("\nEnter the salary : ");
+    scanf("%f",&bs);
+    da=bs*0.4;
+    hra=bs*0.2;
+    gs=da+hra+bs;
+    printf("\nGross salary: %0.2f",gs);
+    printf("\nDearness allowance: %0.2f",da);
+    printf("\nHouse rent allowance: %0.2f",hra);
+    return 0;
+}
+---- OUTPUT ----
+   Enter the salary : 20000
 
+Gross salary: 32000.00
+Dearness allowance: 8000.00
+House rent allowance: 4000.00
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2.The distance between two cities (in km) is input through the keyboard.Write a program to convert annd print this distance in meters,feet,inches and centimeters.
+
+PROGRAM:
+       
