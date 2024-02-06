@@ -18,6 +18,9 @@ Data types
   *Union
 ---------------------------------
 Aritthmetic operators 
-   * , / , % , + , - 
+   * , / , % ------> Higher precidency 
+   + , - ,
+
+
 
 
