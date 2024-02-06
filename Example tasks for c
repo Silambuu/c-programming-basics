@@ -24,7 +24,7 @@ Gross salary: 32000.00
 Dearness allowance: 8000.00
 House rent allowance: 4000.00
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 2.The distance between two cities (in km) is input through the keyboard.Write a program to convert annd print this distance in meters,feet,inches and centimeters.
 
 PROGRAM:
@@ -54,7 +54,7 @@ Centemeter : &0.2f
 Inches : 1259842.50
 Feet : 104986.88
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 3.If the marks obtained by a student in five different subjects are input through the keyboard,find out the aggregates marks and percentage marks obtained by the student.
 assume that the maximum marks that can be obtained by a student in each subject is 100.
 
@@ -62,11 +62,11 @@ PROGRAM:
         #include <stdio.h>
 int main()
 {
-    int ta,en,mat,sci,ssc,total;
+    int m1,m2,m3,m4,m5,total;
     float avg;
     printf("Enter five marks : ");
-    scanf("%d%d%d%d%d",&ta,&en,&mat,&sci,&ssc);
-    total=ta+en+mat+sci+ssc;
+    scanf("%d%d%d%d%d",&m1,&m2,&m3,&m4,&m5);
+    total=m1+m2+m3+m4+m5;
     avg=total/5.0;
     printf("\nTotal : %d",total);
     printf("\nAvg :%0.2f",avg);
@@ -82,5 +82,28 @@ Enter five marks : 90
 Total : 467
 Avg :93.40
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-4.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4.Temparature of a city in fahernheit degrees is input through the keyboard.write a program to convert this temparature into centigrade degrees.
+
+PROGRAM:
+      #include <stdio.h>
+int main()
+{
+    float f,c;
+    printf("Enter the temparature : ");
+    scanf("%f",&f);
+    c=(f - 32)*(5.0,9.0);
+    printf("\nResult : %f",c);
+    return 0;
+} 
+---- OUTPUT ----
+Enter the temparature : 100
+
+Result : 37.7778
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+5.The length & breadth of a rectangle and radious of a circle are input through the keyboard.write a program to calculate the area & perimeter of the rectangle,
+ and the area & circumference of the circle.
+
+PROGRAM:
+      
