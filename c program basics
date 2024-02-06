@@ -21,6 +21,40 @@ Aritthmetic operators
    * , / , % ------> Higher precidency 
    + , - ,
 
+-----example prog:
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c;
+    printf("\nEnter 2 nos :");
+    scanf("%d%d",&a,&b);
+    c=a+b;
+    printf("\nTotal : %d",c);
+    c=a-b;
+    printf("\nDifference : %d",c);
+    c=a*b;
+    printf("\nMul : %d",c);
+    c=a/b;
+    printf("\nDiv : %d",c);
+    c=a%b;
+    printf("\nMod : %d",c);
+
+    return 0;
+}
+-----output:
+   Enter 2 nos :100
+23
+
+Total : 123
+Difference : 77
+Mul : 2300
+Div : 4
+Mod : 8
+
+-----------------------------------------
+          
+
 
 
 
