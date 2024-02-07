@@ -17,7 +17,7 @@ Data types
   *Enumunation
   *Union
 ---------------------------------
-Aritthmetic operators 
+Arithmetic operators 
    * , / , % ------> Higher precidency 
    + , - ,
 
