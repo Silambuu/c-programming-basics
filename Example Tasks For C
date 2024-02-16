@@ -1,4 +1,5 @@
-1.Ramesh's basic salary is input through the keyboard. His dearness allowance is 40% of basic salary, and house rent allowance is 20% of basic salary, write a program to calculate his gross salary.
+1.Ramesh's basic salary is input through the keyboard. His dearness allowance is 40% of basic salary, and house rent allowance is 20% of basic salary,
+   write a program to calculate his gross salary.
 
 PROGRAM:
         #include <stdio.h>
@@ -24,7 +25,7 @@ Gross salary: 32000.00
 Dearness allowance: 8000.00
 House rent allowance: 4000.00
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 2.The distance between two cities (in km) is input through the keyboard.Write a program to convert annd print this distance in meters,feet,inches and centimeters.
 
 PROGRAM:
@@ -54,7 +55,7 @@ Centemeter : &0.2f
 Inches : 1259842.50
 Feet : 104986.88
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 3.If the marks obtained by a student in five different subjects are input through the keyboard,find out the aggregates marks and percentage marks obtained by the student.
 assume that the maximum marks that can be obtained by a student in each subject is 100.
 
@@ -82,7 +83,7 @@ Enter five marks : 90
 Total : 467
 Avg :93.40
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 4.Temparature of a city in fahernheit degrees is input through the keyboard.write a program to convert this temparature into centigrade degrees.
 
 PROGRAM:
@@ -101,7 +102,7 @@ Enter the temparature : 100
 
 Result : 37.7778
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 5.The length & breadth of a rectangle and radious of a circle are input through the keyboard.write a program to calculate the area & perimeter of the rectangle,
  and the area & circumference of the circle.
 
@@ -142,6 +143,87 @@ Perimeter of ractangle : 80.00
 Area of circle : 113.04
 Circumstance of circle : 37.68
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+6.Two numbers are input through the keyboard into two locations C and D.write a program to interchange(SWAPPING) the contents of C and D.
+
+--- ( With Third Variable ) ---
+  
+PROGRAM:
+     #include<stdio.h>
+int main()
+{
+    int c,d,b;                                                         
+    printf("\nEnter 2 Nos : ");
+    scanf("%d%d",&c,&d);
+    printf("\nBefore interchange C:%d D:%d ",c,d);
+    b=c;                                                                       
+    c=d;                                                                         
+    d=b;                                                                         
+    printf("\nAfter interchange C :%d D :%d ",c,d);                              
+    return 0;
+}
+---- OUTPUT ----
+Enter 2 Nos : 5
+6
+
+Before interchange C : 5  D : 6
+After interchange  C : 6  D : 5
+
+--- ( Without Third Variable ) ---
+
+PROGRAM:
+      #include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("\nEnter 2 Nos : ");
+    scanf("%d%d",&a,&b);        //5,10
+    printf("\nBefore interchange A : %d  B : %d ",a,b);
+    a=a+b;    //15                                                ***a=a*b;
+    b=a-b;    //5                                                 ***b=a/b;
+    a=a-b;    //10                                                ***a=a/b;
+    printf("\nAfter interchange A : %d  B : %d ",a,b);
+    return 0;
+}
+---- OUTPUT ----
+Enter 2 Nos : 5
+10
+
+Before interchange A : 5  B : 10
+After interchange A : 10  B : 5
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+7.If a five-digit number is input through the keyboard,write a program to calculate the sum of its digits.(Hint: Use the modulus operator %)
+
+PROGRAM:
+       #include<stdio.h>
+int main()
+{
+    int a,b,c,d,e,f,g,h,i,sum=0;
+    printf("\nEnter 5 Digit No : ");
+    scanf("%d",&a);                   //12345
+    b=a/10;                         //1234
+    c=a%10;                        //5
+    sum+=c;                        //sum=sum+5;
+    d=b/10;                       //123
+    e=b%10;                      //4
+    sum+=e;
+    f=d/10;                      //12
+    g=d%10;                      //3
+    sum+=g;
+    h=f/10;                      //1
+    sum+=h;
+    i=f%10;                      //2
+    sum+=i;
+    printf("\nTotal : %d",sum);
+    return 0;
+}
+---- OUTPUT ----
+Enter 5 Digit No : 12345
+
+Total : 15
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+8.If a five-digit number is input through the keyboard,write a program to reverse the number.
 
       
