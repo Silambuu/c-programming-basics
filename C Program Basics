@@ -1,6 +1,6 @@
 c programming basics:
 
----------------------------------
+-------------------------------------------------------------------------------
 Data types
 
 1:Built in primitives 
@@ -16,10 +16,21 @@ Data types
   *Structure
   *Enumunation
   *Union
----------------------------------
-Arithmetic operators 
-   * , / , % ------> Higher precidency 
-   + , - ,
+-------------------------------------------------------------------------------
+Operators in C
+
+ *Arithmetic Operators
+ *Assignment Operators
+ *Relatitonal Operators
+ *Logical Operators
+ *Bitwise Operators
+ *Increment and Decrement Operators
+ *sizeof Operator
+
+--------------------------------------------------------------------------------
+--> Arithmetic operators 
+     * (mul) , / (div) , % (mod) ------> Higher precidency 
+     + (sum) , - (sub) ,
 
 -----example prog:
 #include <stdio.h>
@@ -52,7 +63,8 @@ Mul : 2300
 Div : 4
 Mod : 8
 
------------------------------------------
+--------------------------------------------------------------------------------
+
           
 
 
