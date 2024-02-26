@@ -166,8 +166,9 @@ int main()
 Enter 2 Nos : 5
 6
 
-Before interchange C : 5  D : 6
-After interchange  C : 6  D : 5
+Before interchange  C : 5  D : 6
+
+After interchange   C : 6  D : 5
 
 --- ( Without Third Variable ) ---
 
@@ -312,7 +313,52 @@ Total Iliiterate Women   : 28000
 Total Literacy           : 38400
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-11.
+11.A cashier has currency notes of denominations 10,50 and 100.If the amount to be withdrawn is input through the keyboard in hundreds
+   find the total number of currency notes of each denomination the cashier will have to give to the withdrawer.
 
+PROGRAM:
+      #include<stdio.h>
+int main()
+    {
+        int amt;
+        printf("\nEnter the amount to withdrawn : ");
+        scanf("%d",&amt);                 //1875
+        printf("\n Required notes of 100  : %d",(amt/100));
+        printf("\n Required notes of 50   : %d",(amt%100)/50);
+        printf("\n Required notes of 10   : %d",((amt%100)%50)/10);
+        printf("\n Amount still remaining : %d",((amt%100)%50)%10);
+        return 0;
+    }
+---- OUTPUT ----
+Enter the amount to withdrawn : 1875
 
+ Required notes of 100  : 18
+ Required notes of 50   : 1
+ Required notes of 10   : 2
+ Amount still remaining : 5
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12.If the total selling price of 15 items and the total profit earned on them is input through the keyboard,write a program to find the cost price of one item.
+
+PROGRAM:
+      #include<stdio.h>
+int main()
+    {
+        float s,p,c;
+        printf("\nEnter the selling price of 15 items : "); //380
+        scanf("%f",&s);
+        printf("\nEnter the profit : ");
+        scanf("%f",&p);
+        c=(s-p)/15;
+        printf("\nCost price of 1 Item is Rs.%0.2f",c);
+        return 0;
+    }
+---- OUTPUT ----
+Enter the selling price of 15 items : 380
+
+Enter the profit : 70
+
+Cost price of 1 Item is Rs.20.67
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
       
