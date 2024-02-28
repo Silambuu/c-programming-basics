@@ -1,5 +1,4 @@
 c programming basics:
-
 -------------------------------------------------------------------------------
 Data types
 
@@ -16,7 +15,7 @@ Data types
   *Structure
   *Enumunation
   *Union
--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 Operators in C
 
  *Arithmetic Operators
@@ -27,7 +26,7 @@ Operators in C
  *Increment and Decrement Operators
  *sizeof Operator
 
---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
 --> Arithmetic operators 
      * (mul) , / (div) , % (mod) ------> Higher precidency 
      + (sum) , - (sub) ,
@@ -63,9 +62,45 @@ Mul : 2300
 Div : 4
 Mod : 8
 
---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Assignment operators 
 
-          
+operator      example      sameas 
+   =           a = b        a = b
+   +=          a += b       a = a+b
+   -=          a -= b       a = a-b
+   *=          a *= b       a = a*b
+   /=          a /= b       a = a/b
+   %=          a %= b       a = a%b
+
+example program:
+#include<stdio.h>
+int main()
+{
+    int a=10,b=5;
+    a+=b;  //a=a+5
+    printf("A : %d",a);
+    a-=b;
+    printf("\nA : %d",a);
+    a*=b;
+    printf("\nA : %d",a);
+    a/=b;
+    printf("\nA : %d",a);
+    a%=b;
+    printf("\nA : %d",a);
+    return 0;
+}
+---- OUTPUT ----
+A : 15
+A : 10
+A : 50
+A : 10
+A : 0
+
+---------------------------------------------------------------------------------
+Relational operators
+
+    
 
 
 
