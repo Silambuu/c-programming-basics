@@ -1,5 +1,5 @@
-c programming basics:
--------------------------------------------------------------------------------
+C programming basics:
+--------------------------------------------------------------------------------
 Data types
 
 1:Built in primitives 
@@ -15,7 +15,7 @@ Data types
   *Structure
   *Enumunation
   *Union
---------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
 Operators in C
 
  *Arithmetic Operators
@@ -26,15 +26,15 @@ Operators in C
  *Increment and Decrement Operators
  *sizeof Operator
 
----------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+
 --> Arithmetic operators 
      * (mul) , / (div) , % (mod) ------> Higher precidency 
      + (sum) , - (sub) ,
 
------example prog:
-#include <stdio.h>
-
-int main()
+example prog:
+  #include <stdio.h>
+  int main()
 {
     int a,b,c;
     printf("\nEnter 2 nos :");
@@ -61,9 +61,8 @@ Difference : 77
 Mul : 2300
 Div : 4
 Mod : 8
-
----------------------------------------------------------------------------------
-Assignment operators 
+------------------------------------------------------------------------------------
+--> Assignment operators 
 
 operator      example      sameas 
    =           a = b        a = b
@@ -74,8 +73,8 @@ operator      example      sameas
    %=          a %= b       a = a%b
 
 example program:
-#include<stdio.h>
-int main()
+  #include<stdio.h>
+  int main()
 {
     int a=10,b=5;
     a+=b;  //a=a+5
@@ -96,9 +95,125 @@ A : 10
 A : 50
 A : 10
 A : 0
+------------------------------------------------------------------------------------
+--> Relational operators
 
----------------------------------------------------------------------------------
-Relational operators
+Operators   Meaning of operator
+ ==           Equal to
+ !=           Not equal to
+ >            Greater than
+ <            Lesser than
+ >=           Greater than equal to 
+ <=           lesser than equal to
+
+example program:
+  #include<stdio.h>
+  int main()
+{
+    int a=10,b=5;
+    printf("\nGreater than          : %d",a>b);
+    printf("\nLesser than           : %d",a<b);
+    printf("\nGreater than equal to : %d",a>=b);
+    printf("\nLesser than equal to  : %d",a>=b);
+    return 0;
+}
+---- OUTPUT ----
+Greater than          : 1
+Lesser than           : 0
+Greater than equal to : 1
+Lesser than equal to  : 1
+------------------------------------------------------------------------------------
+--> Logical operators
+
+Operator                         Meaning
+  &&            Logical AND. True only if all operands are true 
+  ||            Logical OR. True only if either one operand is true
+  !             Logical NOT. True only if the operand is 0 
+
+example program:
+   #include<stdio.h>
+   int main()
+{
+    int a=80;
+    printf("\nLogical And  : %d",(a>=35 && a<=100));
+    printf("\nLogical OR   : %d",(a>=35 || a<=100));
+    printf("\nLogical NOT  : %d",!(a>=35));
+    return 0;
+}
+---- OUTPUT ----
+Logical And  : 1
+Logical OR   : 1
+Logical NOT  : 0
+------------------------------------------------------------------------------------
+--> Increment and Decrement Operators 
+
+Operator     Meaning 
+  ++        Increment(++a,a++)
+  --        Decrement(--a,a--)
+
+example program:
+   #include<stdio.h>
+   int main()
+{
+    int a=1;
+    printf("\nPre Increment : %d",++a);
+    printf("\nPost Increment : %d",a++);
+    printf("\nA : %d",a);
+    printf("\nPre Decrement : %d",--a);
+    printf("\nPost Decrement : %d",a--);
+    printf("\nA : %d",a);
+
+    return 0;
+}
+---- OUTPUT ----
+Pre Increment : 2
+Post Increment : 2
+A : 3
+Pre Decrement : 2
+Post Decrement : 2
+A : 1
+------------------------------------------------------------------------------------
+Bitwise Operators
+
+ Symbol    Name 
+   &       AND
+   |       OR
+   ~       NOT
+   ^       XOR
+  <<      Shift Left 
+  >>      Shift Right
+
+example program:
+  #include<stdio.h>
+  int main()
+{
+    int a=10,b=11,c;
+    printf("\nBitwise AND : %d",a&b);
+    printf("\nBitwise OR  : %d",a|b);
+    printf("\nBitwise XOR : %d",a^b);
+    printf("\nBitwise OR : %d",~a);
+    a=16;
+    b=a<<2;
+    c=a>>2;
+    printf("\n Left Shift  : %d",b);
+    printf("\n Right Shift : %d",c);
+    return 0;
+}
+---- OUTPUT ----
+Bitwise AND : 10
+Bitwise OR  : 11
+Bitwise XOR : 1
+Bitwise OR : -11
+ Left Shift  : 64
+ Right Shift : 4
+------------------------------------------------------------------------------------
+
+   CONTROL STATEMENT
+
+
+
+
+
 
     
 
