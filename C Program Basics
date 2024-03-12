@@ -1,6 +1,6 @@
 C programming basics:
 --------------------------------------------------------------------------------
-Data types
+| Data types |
 
 1:Built in primitives 
   *Integer---> *Int , *Char
@@ -16,7 +16,7 @@ Data types
   *Enumunation
   *Union
 ----------------------------------------------------------------------------------
-Operators in C
+| Operators in C |
 
  *Arithmetic Operators
  *Assignment Operators
@@ -173,7 +173,7 @@ Pre Decrement : 2
 Post Decrement : 2
 A : 1
 ------------------------------------------------------------------------------------
-Bitwise Operators
+--> Bitwise Operators
 
  Symbol    Name 
    &       AND
@@ -191,7 +191,7 @@ example program:
     printf("\nBitwise AND : %d",a&b);
     printf("\nBitwise OR  : %d",a|b);
     printf("\nBitwise XOR : %d",a^b);
-    printf("\nBitwise OR : %d",~a);
+    printf("\nBitwise NOT : %d",~a);
     a=16;
     b=a<<2;
     c=a>>2;
@@ -203,16 +203,242 @@ example program:
 Bitwise AND : 10
 Bitwise OR  : 11
 Bitwise XOR : 1
-Bitwise OR : -11
+Bitwise NOT : -11
  Left Shift  : 64
  Right Shift : 4
 ------------------------------------------------------------------------------------
+| CONTROL STATEMENT |
 
-   CONTROL STATEMENT
+ *If Statement
+--> if 
+--> if else 
+--> else if ladder 
+--> nested if 
+
+*Switch Statement 
+
+*Conditional Operator Statement
+
+*Loop Statement
+--> for loop
+--> while loop
+--> do while loop
+
+*goto Statement
 
 
+***If statement***
+
+Syntax:
+ if(condition)
+ {
+   statement:
+ }
+
+**sample program**
+  int main()
+{
+    char name[10];
+    int age;
+    printf("\nEnter your name :");
+    scanf("%s",&name);
+    printf("\nEnter your age :");
+    scanf("%d",&age);
+    if(age>=18)
+    {
+        printf("\n %s age is %d eligilble for vote",name,age);
+    }
+    return 0;
+}
+---- OUTPUT ----
+Enter your name :sim
+Enter your age :20
+ sim age is 20 eligilble for vote
 
 
+***if else statement***
+
+Syntax:
+if(condition)
+ {
+   statement:
+ }
+else
+{
+  statement;
+}
+
+**sample program**
+   int main()
+{
+    char name[10];
+    int age;
+    printf("\nEnter your name :");
+    scanf("%s",&name);
+    printf("\nEnter your age :");
+    scanf("%d",&age);
+    if(age>=18)
+    {
+        printf("\n %s age is %d eligilble for vote",name,age);
+    }
+    else
+    {
+        printf("\n %s age is %d not eligilble for vote",name,age);
+    }
+    return 0;
+}
+---- OUTPUT ----
+Enter your name :sim
+Enter your age :17
+ sim age is 17 not eligilble for vote
+Enter your name :ram
+Enter your age :20
+ ram age is 20 eligilble for vote
+
+
+***else if statement***
+
+Syntax:
+if(condition)
+ {
+   statement:
+ }
+else if(condition)
+{
+  statement;
+}
+else
+{
+  statement;
+}
+
+**sample program**
+  int main()
+{
+    int a;
+    printf("\nEnter value of A :");
+    scanf("%d",&a);
+    if(a<0)
+    {
+        printf("\n%d is negative num",a);
+    }
+    else if(a==0)
+    {
+        printf("\nThe given num is 0");
+    }
+    else if(a>0)
+    {
+        printf("\n%d is positive num",a);
+    }
+    return 0;
+}
+---- OUTPUT ----
+Enter value of A :11
+11 is positive num
+Enter value of A :-23
+-23 is negative num
+
+
+***nested if statement***
+
+Syntax:
+if(condition)
+{
+  if(condition)
+   {
+      statement:
+   }
+}
+
+**sample program**
+  int main()
+{
+int year;
+    printf("\nEnter the year :");
+    scanf("%d",&year);
+    if(year%100==0)
+    {
+        if(year%400==0)
+        {
+            printf("%d is leap year",year);
+        }
+        else
+        {
+            printf("\n%d is not leap year",year);
+        }
+    }
+    else
+    {
+        if(year%4==0)
+        {
+            printf("%d is leap year",year);
+        }
+        else
+        {
+            printf("\n%d is not leap year",year);
+        }
+    }
+    return 0;
+}
+---- OUTPUT ----
+Enter the year :2035
+2035 is not leap year
+Enter the year :2000
+2000 is leap year 
+
+
+***switch statement***
+
+Syntax:
+switch(choice)
+{
+  case value:
+   ..........
+       break;
+ case value:
+   ..........
+       break;
+ default:
+   ......
+   break;
+}
+
+**sample program**
+  int main()
+{
+    int ch;
+    printf("\nEnter the value : ");
+    scanf("%d",&ch);
+    switch(ch)
+    {
+    case 1:
+        printf("One");
+        break;
+    case 2:
+        printf("Two");
+        break;
+    case 3:
+        printf("Three");
+        break;
+    default:
+        printf("Invalid number");
+    }
+    return 0;
+}
+---- OUTPUT ----
+Enter the value : 3
+Three
+Enter the value : 0
+Invalid number
+
+
+***conditional operator statement***
+
+Syntax:
+ condition?true-statement:false-statement;
+
+**sample program**
+  
 
 
     
