@@ -361,4 +361,183 @@ Enter the profit : 70
 Cost price of 1 Item is Rs.20.67
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-      
+13. School Result Management
+    1.Five marks input through the keyboard 
+    2.Find total and average of the given marks 
+    3.Find the result whether the given marks must be >=35
+    4.Grade as per the following condition.
+       90-100 - A Grade
+       80-89  - B Grade 
+       70-79  - C Grade 
+       <70    - D Grade 
+       Fail   - No Grade
+
+PROGRAM:
+#include<stdio.h>
+int main()
+{
+    int m1,m2,m3,m4,m5,total;
+    float avg;
+    printf("\nEnter 5 sub marks :\n ");
+    scanf("%d%d%d%d%d",&m1,&m2,&m3,&m4,&m5);
+    total=m1+m2+m3+m4+m5;
+    avg=total/5.0;
+    printf("\nTotal   : %d",total);
+    printf("\nAverage : %0.2f",avg);
+    if(m1>=35&&m2>=35&&m3>=35&&m4>=35&&m5>=35)
+    {
+        printf("\nResult : Pass ");
+        if(avg>90&&avg<=100)
+        {
+            printf("\nGrade : A Grade ");
+        }
+        else if(avg>80&&avg<=89)
+        {
+            printf("\nGrade : B Grade ");
+        }
+        else if(avg>70&&avg<=79)
+        {
+            printf("\nGrade : C Grade ");
+        }
+        else
+        {
+            printf("\nGrade : D Grade ");
+        }
+    }
+    else
+    {
+        printf("\nResult : Fail ");
+        printf("\nGrade : No Grade ");
+    }
+    return 0;
+}
+---- OUTPUT ----
+ Enter 5 sub marks :
+ 60
+60
+60
+80
+80
+
+Total   : 340
+Average : 68.00
+Result : Pass
+Grade : D Grade
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+14.A library charges a fine for every book returned late.
+   For first 5 days the fine is 50 paise.
+   for 6-10 days fine is one rupee and above 10 days fine is 5 rupees.
+   If you return the book after 30 days your membership will be canceled.
+   write a program to accept the number of days the number is late to return the book and display the fine appropriate message.
+
+PROGRAM: 
+ #include<stdio.h>
+int main()
+{
+    int days;
+    printf("Enter the days :");
+    scanf("%d",&days);
+    if(days<=5)
+    {
+        printf("\n Fine amount 50 paise");
+    }
+    else if(days>=6 && days<=10)
+    {
+        printf("\nFine amount 1 rupee");
+    }
+    else if(days>10 && days<30)
+    {
+        printf("\nFine amount 5 rupee");
+    }
+    else
+    {
+        printf("\nYour membership will be cancelled");
+    }
+    return 0;
+}
+---- OUTPUT ---- 
+Enter the days :18
+Fine amount 5 rupee
+Enter the days :30
+Your membership will be cancelled
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+15.Any integer is input through the keyboard. Write a program to find out whether it is an odd number or even number.(hint use % operator)
+
+PROGRAM:
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("Enter the number :");
+    scanf("%d",&n);
+    if(n%2==0)
+    {
+        printf("\n%d is even no",n);
+    }
+    else
+    {
+       printf("\n%d is not even no",n);
+    }
+    return 0;
+}
+---- OUTPUT ----
+Enter the number :7
+7 is not even no
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16.Write a program to given character is vowels or not using switch case.
+
+PROGRAM:
+#include<stdio.h>
+int main()
+{
+    char ch;
+    printf("Enter the character :");
+    scanf("%c",&ch);
+    switch(ch)
+    {
+    case 'a':
+    case 'e':
+    case 'i':
+    case 'o':
+    case 'u':
+    case 'A':
+    case 'E':
+    case 'I':
+    case 'O':
+    case 'U':
+        printf("%c is vowel",ch);
+        break;
+    default:
+        printf("%c is not vowel",ch);
+        break;
+    }
+    return 0;
+}
+---- OUTPUT ----
+Enter the character :I
+I is vowel
+Enter the character :h
+h is not vowel
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
