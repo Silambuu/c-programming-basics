@@ -523,6 +523,37 @@ Enter the character :h
 h is not vowel
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+17.
+
+PROGRAM:
+#include<stdio.h>
+int msin()
+{
+    int n,a,d1,d2,d3;
+    printf("Enter 3 digit no : ");
+    scanf("%d",&n);//153
+    d3=n%10;//3
+    a=n/10;//15
+    d2=a%10;//5
+    d1=a/10;//1
+    a=((d1*d1*d1)+(d2*d2*d2)+(d3*d3*d3));
+    if(a==n)
+    {
+        printf("\n%d is amstrong number",a);
+    }
+    else
+    {
+        printf("\n%d is not an amstrong number",a);
+    }
+    return 0;
+}
+---- OUTPUT ----
+Enter 3 digit no : 153
+153 is amstrong number
+Enter 3 digit no : 146
+281 is not an amstrong number
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
