@@ -207,7 +207,7 @@ Bitwise NOT : -11
  Left Shift  : 64
  Right Shift : 4
 ------------------------------------------------------------------------------------
-| CONTROL STATEMENT |
+| CONTROL STATEMENTS |
 
  *If Statement
 --> if 
@@ -220,9 +220,9 @@ Bitwise NOT : -11
 *Conditional Operator Statement
 
 *Loop Statement
---> for loop
---> while loop
---> do while loop
+--> for loop (Entry check loop)
+--> while loop (Entry check loop)
+--> do while loop (Exit check loop)
 
 *goto Statement
 
@@ -235,7 +235,7 @@ Syntax:
    statement:
  }
 
-**sample program**
+--- sample program ---
   int main()
 {
     char name[10];
@@ -268,7 +268,7 @@ else
   statement;
 }
 
-**sample program**
+--- sample program ---
    int main()
 {
     char name[10];
@@ -312,7 +312,7 @@ else
   statement;
 }
 
-**sample program**
+--- sample program ---
   int main()
 {
     int a;
@@ -350,7 +350,7 @@ if(condition)
    }
 }
 
-**sample program**
+--- sample program ---
   int main()
 {
 int year;
@@ -403,7 +403,7 @@ switch(choice)
    break;
 }
 
-**sample program**
+--- sample program ---
   int main()
 {
     int ch;
@@ -437,11 +437,163 @@ Invalid number
 Syntax:
  condition?true-statement:false-statement;
 
-**sample program**
+--- sample program ---
+  #include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("\nEnter the value of A and B : ");
+    scanf("%d%d",&a,&b);
+    c=a>b?a:b;
+    printf("\n%d is highest value",c);
+    return 0;
+}
+---- OUTPUT ----
+Enter the value of A and B : 45
+154
+
+154 is highest value
+
+
+***Loop statement***
+***while loop***
+
+Syntax:
+while(condition)
+{
+  ------
+  ------
+}
+
+--- sample program ---(print the numbers)
+   #include<stdio.h>
+int main()
+{
+    int i=1,n;
+    printf("\nEnter the limit :");
+    scanf("%d",&n);
+    while(i<=n)
+    {
+        printf("\n%d",i);
+        i++;
+    }
+    return 0;
+}
+---- OUTPUT ----
+Enter the limit :6
+
+1
+2
+3
+4
+5
+6
+
+
+***do while loop***
+
+Syntax:
+do
+{
+  ----
+  ----
+}while(condition);
+
+--- sample program ---(find even numbers)
+   #include<stdio.h>
+int main()
+{
+    int i=0,n;
+    printf("\nEnter the limit :");
+    scanf("%d",&n);
+    do
+    {
+        printf("\n%d",i);
+        i+=2;
+    }
+    while(i<=n);
+    return 0;
+}
+---- OUTPUT ---
+Enter the limit :12
+
+0
+2
+4
+6
+8
+10
+12
+
+
+***for loop***
+
+--- sample program ---(find odd numbers)
+#include<stdio.h>
+int main()
+{
+    int i,n;
+    printf("\nEnter the limit :");
+    scanf("%d",&n);
+    for(i=1; i<=n; i+=2)
+    {
+        printf("\n%d",i);
+    }
+    return 0;
+}
+--- OUTPUT --- 
+Enter the limit :10
+
+1
+3
+5
+7
+9
+
+***nested for loop***
+
+--- sample program ---
+#include<stdio.h>
+int main()
+{
+    int i,j;
+    for(i=1; i<=5; i++)
+    {
+        for(j=1; j<=5; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    printf("----------------------------\n");
+    for(i=1; i<=5; i++)
+    {
+        for(j=1; j<=i; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+--- OUTPUT ---
+*****
+*****
+*****
+*****
+*****
+----------------------------
+*
+**
+***
+****
+*****
+
+
+***goto label***
+
+--- sample program ---
   
-
-
-    
 
 
 
