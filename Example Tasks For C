@@ -523,7 +523,7 @@ Enter the character :h
 h is not vowel
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-17.
+17.Three digit number throughe the keyboard write a program to find the given number is Amstrong number or not.
 
 PROGRAM:
 #include<stdio.h>
