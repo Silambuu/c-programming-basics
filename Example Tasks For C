@@ -554,13 +554,92 @@ Enter 3 digit no : 146
 281 is not an amstrong number
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+18. Wrirte a program for the following output using switch case 
 
+         MENU CARD 
+             1.COFFEE
+             2.TEA
+             3.COLD COFFEE
+             4.MILK SHAKE
 
+     Enter your choice : 2 
 
+    you have selected Tea 
+    Enter the quantity : 5
+    Total Amount : 50
 
+PROGRAM:
+#include<stdio.h>
+int main()
+{
+    int ch,qty;
+    printf("\n\tMENU CARD");
+    printf("\n\t\t 1.COFFEE       RS:15");
+    printf("\n\t\t 2.TEA          RS:10");
+    printf("\n\t\t 3.COLD COFFEE  RS:20");
+    printf("\n\t\t 4.MILK SHAKE   RS:25");
+    printf("\n\nEnter your choice :");
+    scanf("%d",&ch);
+    switch(ch)
+    {
+    case 1:
+        printf("\nYou have selected a Coffee");
+        printf("\nEnter the quantity : ");
+        scanf("%d",&qty);
+        printf("\nTotal Amount : %d",(qty*15));
+        break;
+    case 2:
+        printf("\nYou have selected a Tea");
+        printf("\nEnter the quantity : ");
+        scanf("%d",&qty);
+        printf("\nTotal Amount : %d",(qty*10));
+        break;
+    case 3:
+        printf("\nYou have selected a Cold Coffee");
+        printf("\nEnter the quantity : ");
+        scanf("%d",&qty);
+        printf("\nTotal Amount : %d",(qty*20));
+        break;
+    case 4:
+        printf("\nYou have selected a Milk shake");
+        printf("\nEnter the quantity : ");
+        scanf("%d",&qty);
+        printf("\nTotal Amount : %d",(qty*25));
+        break;
+    default:
+        printf("\nInvalid product selection");
+        break;
+    }
+    return 0;
+}
+---- OUTPUT ----
+             MENU CARD
+                 1.COFFEE       RS:15
+                 2.TEA          RS:10
+                 3.COLD COFFEE  RS:20
+                 4.MILK SHAKE   RS:25
 
+Enter your choice :2
 
+You have selected a Tea
+Enter the quantity : 5
 
+Total Amount : 50
+
+             MENU CARD
+                 1.COFFEE       RS:15
+                 2.TEA          RS:10
+                 3.COLD COFFEE  RS:20
+                 4.MILK SHAKE   RS:25
+
+Enter your choice :4
+
+You have selected a Milk shake
+Enter the quantity : 7
+
+Total Amount : 175 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
