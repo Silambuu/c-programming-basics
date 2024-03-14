@@ -592,7 +592,115 @@ int main()
 
 ***goto label***
 
---- sample program ---
+--- simple sample program ---
+#include<stdio.h>
+int main()
+{
+  int i=0;
+  sim:
+  printf("\n%d",i);
+  i++;
+  if(i!=5)
+  {
+     goto sim;
+  }
+ printf("\nEnd");
+ return 0;
+}
+--- OUTPUT ---
+0
+1
+2
+3
+4
+End 
+
+--- Sample program ---(using switch case)
+ #include<stdio.h>
+int main()
+{
+    int ch,qty,i,net=0;
+    sim:
+    printf("\n\tMENU CARD");
+    printf("\n\t\t 1.COFFEE       RS:15");
+    printf("\n\t\t 2.TEA          RS:10");
+    printf("\n\t\t 3.COLD COFFEE  RS:20");
+    printf("\n\t\t 4.MILK SHAKE   RS:25");
+    printf("\n\nEnter your choice :");
+    scanf("%d",&ch);
+    switch(ch)
+    {
+    case 1:
+        printf("\nYou have selected a Coffee");
+        printf("\nEnter the quantity : ");
+        scanf("%d",&qty);
+        net+=(qty*15);
+        break;
+    case 2:
+        printf("\nYou have selected a Tea");
+        printf("\nEnter the quantity : ");
+        scanf("%d",&qty);
+        net+=(qty*10);
+        break;
+    case 3:
+        printf("\nYou have selected a Cold Coffee");
+        printf("\nEnter the quantity : ");
+        scanf("%d",&qty);
+        net+=(qty*20);
+        break;
+    case 4:
+        printf("\nYou have selected a Milk shake");
+        printf("\nEnter the quantity : ");
+        scanf("%d",&qty);
+        net+=(qty*25);
+        break;
+    default:
+        printf("\nInvalid product selection");
+        break;
+    }
+       printf("\nDo You Want To Continue Press 1 : ");
+       scanf("%d",&i);
+       if(i==1)
+       {
+           goto sim;
+       }
+       printf("\nTotal Amount : %d",net);
+        printf("\nThank You Come Again");
+    return 0;
+}
+--- OUTPUT --- 
+             MENU CARD
+                 1.COFFEE       RS:15
+                 2.TEA          RS:10
+                 3.COLD COFFEE  RS:20
+                 4.MILK SHAKE   RS:25
+
+Enter your choice :3
+
+You have selected a Cold Coffee
+Enter the quantity : 4
+
+Do You Want To Continue Press 1 : 1
+
+             MENU CARD
+                 1.COFFEE       RS:15
+                 2.TEA          RS:10
+                 3.COLD COFFEE  RS:20
+                 4.MILK SHAKE   RS:25
+
+Enter your choice :1
+
+You have selected a Coffee
+Enter the quantity : 2
+
+Do You Want To Continue Press 1 : 2
+
+Total Amount : 110
+Thank You Come Again
+
+
+
+
   
 
 
